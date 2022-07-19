@@ -1,0 +1,6 @@
+.cart__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 17px 15px 25px 15px;
+}
