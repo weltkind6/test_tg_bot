@@ -31,14 +31,13 @@ function App() {
         } else setCartItems(cartItems.map(x => x.id === food.id ? {...exist, quantity: exist.quantity - 1} : x))
     }
     const onCheckOut = () => {
-        telegram.MainButton.textColor = "#F55353";
         telegram.MainButton.text = "Оплатить"
         telegram.MainButton.show()
-        telegram.BackButton.show()
+        telegram.BackButton.setVisible(true)
     }
     return (
         <>
-            <h1 className="heading">Закажите самые свежеие овощи и фрукты!</h1>
+            <h1 className="heading">Закажите самые свежие овощи и фрукты!</h1>
             <Cart
                 cartItems={cartItems}
                 onAddProduct={onAddProduct}
