@@ -33,11 +33,11 @@ function App() {
     const onCheckOut = () => {
         telegram.MainButton.text = "Оплатить"
         telegram.MainButton.show()
-        telegram.BackButton.setVisible(true)
+        telegram.headerColor = "#ff5522"
     }
     return (
         <>
-            <h1 className="heading">Закажите самые свежие овощи и фрукты!</h1>
+            <h1 className="heading">Закажите свежие овощи и фрукты!</h1>
             <Cart
                 cartItems={cartItems}
                 onAddProduct={onAddProduct}
